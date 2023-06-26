@@ -14,3 +14,9 @@
     place-items: center;
   }
 }
+
+@layer components {
+  .icon {
+    @apply p-2 rounded-full hover:bg-white-20 hover:text-white-100 cursor-pointer active:scale-95;
+  }
+}
