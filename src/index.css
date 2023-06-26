@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    height: 100vh;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  #root {
+    background: url(./assets/background.png) no-repeat center/cover;
+    display: grid;
+    place-items: center;
+  }
+}
