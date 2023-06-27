@@ -19,7 +19,7 @@ export default function App() {
 
   return (
     <main className="flex gap-6 max-w-[1048px] w-[90%] mx-5">
-      <SideMenu  handlePlayPause={handlePlayPause} />
+      <SideMenu  handlePlayPause={handlePlayPause} isPlaying={isPlaying} />
       <div className="flex flex-col gap-6 items-center w-full">
         <Navbar />
         <video className="rounded-[32px] shadow-addressBar aspect-video" ref={videoRef}>
