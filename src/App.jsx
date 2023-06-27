@@ -22,7 +22,7 @@ export default function App() {
       <SideMenu  handlePlayPause={handlePlayPause} isPlaying={isPlaying} />
       <div className="flex flex-col gap-6 items-center w-full">
         <Navbar />
-        <video className="rounded-[32px] shadow-addressBar aspect-video" ref={videoRef}>
+        <video className="rounded-[32px] shadow-addressBar aspect-video pointer-events-none" ref={videoRef}>
           <source src={videoFile} type="video/mp4" />
         </video>
       </div>
