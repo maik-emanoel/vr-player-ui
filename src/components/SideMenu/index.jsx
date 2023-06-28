@@ -5,6 +5,7 @@ import {
   PersonArmsSpread,
   PlayCircle,
   SpeakerHigh,
+  SpeakerSimpleX,
 } from "@phosphor-icons/react";
 import { useState, useRef } from "react";
 
@@ -45,7 +46,11 @@ export default function SideMenu({ handlePlayPause, isPlaying, videoRef }) {
           onMouseEnter={handleShowVolume}
           onMouseLeave={handleHideVolume}
         >
-          <SpeakerHigh size={40} className="icon" />
+          {volume === 0 ? (
+            <SpeakerSimpleX size={40} className="icon" />
+          ) : (
+            <SpeakerHigh size={40} className="icon" />
+          )}
           {isVisible && (
             <div className="p-2 rounded-full bg-white-10 shadow-3xl backdrop-blur-lg text-white-80 flex absolute top-[50%] translate-y-[-50%] left-[150%] md:-top-full md:left-[50%] md:translate-x-[-50%]">
               <input
