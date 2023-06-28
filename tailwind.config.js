@@ -17,6 +17,22 @@ export default {
         'white-80': 'rgba(255, 255, 255, 0.80)',
         'white-100': '#fff',
         'black-10': 'rgba(0, 0, 0, 0.10)'
+      },
+      screens:{
+        '2xl': {'max': '1535px'},
+        // => @media (max-width: 1535px) { ... }
+  
+        'xl': {'max': '1279px'},
+        // => @media (max-width: 1279px) { ... }
+  
+        'lg': {'max': '1023px'},
+        // => @media (max-width: 1023px) { ... }
+  
+        'md': {'max': '768px'},
+        // => @media (max-width: 768px) { ... }
+  
+        'sm': {'max': '550px'},
+        // => @media (max-width: 550px) { ... }
       }
     },
   },
