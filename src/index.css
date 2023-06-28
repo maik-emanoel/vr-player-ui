@@ -19,7 +19,7 @@
       -webkit-appearance: none;
       border-radius: 999px;
       width: 100px;
-      height: 6px;
+      height: 4px;
       background: rgba(255, 255, 255, 0.80);
   }
 
@@ -37,10 +37,16 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
+  @media (max-width: 550px) {
+    :root {
+      font-size: 75%;
+    }
+  }
 }
 
 @layer components {
   .icon {
-    @apply p-2 rounded-full hover:bg-white-20 hover:text-white-100 cursor-pointer active:scale-95;
+    @apply p-2 rounded-full hover:bg-white-20 hover:text-white-100 cursor-pointer active:scale-95 md:w-9 md:h-9;
   }
 }
