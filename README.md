@@ -2,7 +2,7 @@
 
 ![preview](./.github/preview.png)
 
-[Clique aqui para acessar]()
+[Clique aqui para acessar](https://vr-player-ui.vercel.app/)
 
 ## 🚀 Tecnologias
 
