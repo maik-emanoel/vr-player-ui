@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import videoFile from "./assets/video.mp4";
-import Navbar from "./components/NavBar";
+import Navbar from "./components/Navbar";
 import SideMenu from "./components/SideMenu";
 
 export default function App() {
