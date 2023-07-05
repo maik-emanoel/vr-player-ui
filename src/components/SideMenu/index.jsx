@@ -62,6 +62,9 @@ export default function SideMenu({ handlePlayPause, isPlaying, videoRef }) {
                 min={0}
                 max={100}
               />
+              <span className="absolute top-[49%] left-[110%] translate-y-[-50%] md:-top-[70%] md:left-[50%] md:translate-x-[-50%]">
+                {Math.round(volume * 100) + "%"}
+              </span>
             </div>
           )}
         </div>
