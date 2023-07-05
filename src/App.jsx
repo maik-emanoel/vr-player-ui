@@ -12,8 +12,10 @@ export default function App() {
 
       if(isPlaying) {
         videoRef.current.pause()
+        document.querySelector('#root').style.backdropFilter = 'brightness(1)'
       } else {
         videoRef.current.play()
+        document.querySelector('#root').style.backdropFilter = 'brightness(.3)'
       }
   }
 
